@@ -34,7 +34,7 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 direccion que muestra. Las actulizaciones fueron rechazadas porque el repositorio
 remoto contiene trabajo que no esta en el local. Que suele pasar cuando en otro 
 repositorio pusheaa la misma referencia. Recomienda hacer un pull antes de volver 
-a hacer un push.
+a hacer un push..
 
 -Hice un pull para traer las modificaciones del remote y luego git add, git commit,
 y git push para actualizar el remote con los acambios de local. 
