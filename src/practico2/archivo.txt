@@ -5,3 +5,39 @@ Ya modifique en github, ahora lo estoy haciendo en local.
 =======
 Modifico en github y algo distinto en local. 
 >>>>>>> 3bc7e336d176acdb099ff3d5523aca3d3e6478d0
+
+
+
+
+### Estos fueron los pasos que hice.
+
+-Agregué la carpeta practico2 en local ya que tenia un repositrio ya hecho  en github
+ con el pracitco1
+-Cree archivo.txt y puse Hello Wolrd!
+-Hice git add --all, git commit con su mensaje.
+-Verifique que no estaba en el cambio en el remote porque faltaba hacer el push. Luego
+ lo hice.
+-Verifique que esté y modificiqué el archivo en remote e hice un commit. Luego modifique
+ le archivo en un local. El cambio que hice en github no se reflejaba en el local porque
+ faltaba hacer un pull.
+-Hice commit del local e intente pushearlo pero salio este error.
+
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/NumaTejeda/neorisUTN.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+ El error dice algo asi como que falló al hacer un push de alguna referencia a la 
+direccion que muestra. Las actulizaciones fueron rechazadas porque el repositorio
+remoto contiene trabajo que no esta en el local. Que suele pasar cuando en otro 
+repositorio pusheaa la misma referencia. Recomienda hacer un pull antes de volver 
+a hacer un push.
+
+-Hice un pull para traer las modificaciones del remote y luego git add, git commit,
+y git push para actualizar el remote con los acambios de local. 
+
+Decidí dejar ambos cambios, podría haber elejido eliminar cualqueira de los dos y luego
+hacer el push o no dejar nada y el problema se resolveria igualemnte. 
