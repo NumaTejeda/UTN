@@ -1,3 +1,7 @@
 Hello World!
 Edito desde github.
+<<<<<<< HEAD
 Ya modifique en github, ahora lo estoy haciendo en local. 
+=======
+Modifico en github y algo distinto en local. 
+>>>>>>> 3bc7e336d176acdb099ff3d5523aca3d3e6478d0
