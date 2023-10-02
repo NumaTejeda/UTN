@@ -7,7 +7,7 @@ public class LecturaArchivos {
 
 	public static void main(String[] args) {
 			
-		String rutaAbsoluta = "C:/Desktop/utn/neoris_utn/utn/recursos.txt";
+		//String rutaAbsoluta = "C:/Desktop/utn/neoris_utn/utn/recursos.txt";
 		String rutaRelativa = "recursos/archivoTexto.txt";
 		
 		Path pathDelArchivo = Paths.get(rutaRelativa);
