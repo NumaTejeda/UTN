@@ -14,6 +14,7 @@ public class ClaseConArrays {
 		
 		// Otra forma de asiganar valores
 		int arrayNumeros [] = {1, 23, 35, 16};
+		System.out.println(arrayNumeros[0]);
 		
 		//Otra forma más que no cambia mas que solo la sintaxis respecto a la enterior
 		int otro[] = new int[] {1, 45,48};
