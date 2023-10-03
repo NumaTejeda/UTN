@@ -8,6 +8,7 @@ public class Ejercicio1b {
 
 		public static void main(String[] args) {
 			
+			
 			Scanner sc = new Scanner(System.in);
 			
 			System.out.println("Introduce el primer numero: ");
@@ -35,7 +36,7 @@ public class Ejercicio1b {
 		}
 		
 		// Funcion que ordena ascendentemente
-		public static void ordenAsc(int a, int b, int c){
+		public static void ordenAsc(Integer a, Integer b, Integer c){
 			
 			Integer arrNum[] = {a, b, c};
 			Arrays.sort(arrNum);
@@ -44,7 +45,7 @@ public class Ejercicio1b {
 			}
 		}
 		// Funcion que ordena descendentemente
-		public static void ordenDesc(int a, int b, int c) {
+		public static void ordenDesc(Integer a, Integer b, Integer c) {
 			
 			Integer arrNum[] = {a, b, c};
 			Arrays.sort(arrNum, Collections.reverseOrder());

@@ -8,13 +8,13 @@ public class Ejercicio1a {
 	public static void main(String[] args) {
 		
 		
-		int num1 = 3;
-		int num2 = 5;
+		int num1 = 1;
+		int num2 = 2;
 		int num3 = -3;
 		
-		String orden = "d";
+		String orden = "D";
 		
-		if(orden.equals("a")) {
+		if(orden.equals("A")) {
 			ordenAsc(num1, num2, num3);
 		}
 		else {

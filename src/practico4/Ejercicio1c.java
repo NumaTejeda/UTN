@@ -1,27 +1,28 @@
 package practico4;
 
-import java.util.Scanner;
 
 public class Ejercicio1c {
-
 	public static void main(String[] args) {
+		System.out.println("Con parametros: ");
+		bifurcacion(4, 5, 10, "D");
+		System.out.println("Sin parametros: ");
+		bifurcacion(null, null, null, null);
+	}
+	public static void bifurcacion(Integer a, Integer b, Integer c, String respuesta) {
 		
-		Scanner sc = new Scanner(System.in);
-		
-		System.out.println("Introduce el primer numero: ");
-		Integer num1 = sc.nextInt();
-		
-		System.out.println("Introduce el segundo numero: ");
-		Integer num2 = sc.nextInt();
-		
-		System.out.println("Introduce el tercer numero: ");
-		Integer num3 = sc.nextInt();
-		
-		System.out.println("Escribri (A) para ascendente ó (D) para descendente: ");
-		String orden = sc.next().toUpperCase();
-		
-		if(num1 ) {
-			
+		if( (a == null)||(b == null) || (c == null)) {
+			Ejercicio1a.main(null);  
 		}
+		else {
+			if(respuesta.equals("A")) {
+				System.out.println("--Ascendente--");
+				Ejercicio1b.ordenAsc(a, b, c);				
+			}
+			else {
+				System.out.println("--Descendente--");
+				Ejercicio1b.ordenDesc(a, b, c);
+			}
+		}
+		
 	}
 }
