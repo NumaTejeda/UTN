@@ -1,65 +1,44 @@
 package entidades;
 
-import java.time.LocalDate;
 
 public class Producto {
 
 	private String nombre;
-	private String descripcion;
-	private LocalDate fechaAlta;
-	private Integer pesoKg;
 	private Double precios;
+	private Integer cantidad;
 	
-	private static final Double minPrecio = 0.1;
-	
-	public Producto(String nombre, String descripcion, Double precios) {
+	//Constructor
+	public Producto(String nombre, Integer cantidad, Double precios) {
 		this.setNombre(nombre);
-		this.setDescripcion(descripcion);
+		this.setCantidad(cantidad);
 		this.setPrecios(precios);
 	}
-	
-	public Producto(String nombre) {
+	//Constructor solo con nombre y precio
+	public Producto(String nombre, Double precios){
 		this.nombre = nombre;
-		this.fechaAlta = LocalDate.now();
-		this.precios = minPrecio;
+		this.precios = precios;
 	}
-
+	//Getter&Setters cantidad
+	public Integer getCantidad() {
+		return cantidad;
+	}
+	
+	public void setCantidad(Integer cantidad) {
+		this.cantidad = cantidad;
+	}
+	
+	//Getter&Setters nombre
 	public String getNombre() {
 		return nombre;
 	}
-
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
 
-	public String getDescripcion() {
-		return descripcion;
-	}
-
-	public void setDescripcion(String descripcion) {
-		this.descripcion = descripcion;
-	}
-
-	public LocalDate getFechaAlta() {
-		return fechaAlta;
-	}
-
-	public void setFechaAlta(LocalDate fechaAlta) {
-		this.fechaAlta = fechaAlta;
-	}
-
-	public Integer getPesoKg() {
-		return pesoKg;
-	}
-
-	public void setPesoKg(Integer pesoKg) {
-		this.pesoKg = pesoKg;
-	}
-
+	//Getter&Setters Precios
 	public Double getPrecios() {
 		return precios;
 	}
-
 	public void setPrecios(Double precios) {
 		this.precios = precios;
 	}

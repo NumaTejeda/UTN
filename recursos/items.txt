@@ -1,0 +1,3 @@
+harina 50
+leche 40.0
+cafe 100.0

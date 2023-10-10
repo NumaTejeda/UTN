@@ -8,24 +8,25 @@ public class Persona {
 	public String apellido;
 	private LocalDateTime fechaDeNacimiento;
 	
+	//Metodo utilizado para mostrar de manera legible la informacion de un objeto
 	public String toString() {
 		return this.getApellido()+", "+this.getNombre();
 	}
 	
-	//Metod constructor
+	//Constructo por defecto
+	public Persona () {}
+	
+	//Metod constructor fullName
 	public Persona(String nombre, String apellido) {
 		this.setNombre(nombre);
 		this.setApellido(apellido);
 	}
-	public Persona () {}
+	
+	//Metodo constructor full data
 	public Persona(String nombre, String apellido, LocalDateTime fechaDeNacimiento) {
 		this.setApellido(apellido);
 		this.setNombre(nombre);
 		this.setFechaDeNacimiento(fechaDeNacimiento);
-	}
-	
-	public int edad() {
-		return 3;
 	}
 	
 	// Getter
