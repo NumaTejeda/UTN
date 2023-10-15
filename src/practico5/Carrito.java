@@ -1,65 +1,67 @@
 package practico5;
 
-import entidades.Producto;
 import entidades.Persona;
 
 public class Carrito {
 	
 	private Persona Persona;
-	private Producto producto1;
-	private Producto producto2;
-	private Producto producto3;
+	private ItemCarrito item1;
+	private ItemCarrito item2;
+	private ItemCarrito item3;
 	private Double precio;
 	
 	//Constructor 
-	public Carrito(Persona persona, Producto producto1, Producto producto2, Producto producto3) {
+	public Carrito(Persona persona, ItemCarrito item1, ItemCarrito item2, ItemCarrito item3) {
 		this.Persona = persona;
-		this.producto1 = producto1;
-		this.producto2 = producto2;
-		this.producto3 = producto3;
+		this.item1 = item1;
+		this.item2 = item2;
+		this.item3 = item3;
 	}
 	//Deberia retornar la suma del costo de los productos de carrito
-	public String datosPantalla() {
+	
+	public String getPrecio() {
 		return  "Cantidad // Producto // Precio Unitario \n" +
-				this.getProducto1().getCantidad()+" "+this.getProducto1().getNombre()+" "+ this.getProducto1().getPrecios()+"\n"+
-				this.getProducto2().getCantidad()+" "+this.getProducto2().getNombre()+" "+ this.getProducto2().getPrecios()+"\n"+
-				this.getProducto3().getCantidad()+" "+this.getProducto3().getNombre()+" "+ this.getProducto3().getPrecios()+
+				"("+this.item1.getCantidad() +") "+ this.getItem1().getNombre()+" "+ this.getItem1().getPrecio()+"\n"+
+				"("+this.item2.getCantidad() +") "+ this.getItem2().getNombre()+" "+ this.getItem2().getPrecio()+"\n"+
+				"("+this.item3.getCantidad() +") "+ this.getItem3().getNombre()+" "+ this.getItem3().getPrecio()+
 				"\nCosto total: "+this.setPrecio();
 	}
-	
-	public Double getPrecio() {
-		return precio;
-	}
+
+	//Getter&Setter precio
 	public Double setPrecio() {
-		precio = producto1.getPrecios()*producto1.getCantidad()+
-				producto2.getPrecios()*producto2.getCantidad()+
-				producto3.getPrecios()*producto3.getCantidad();
+		precio = item1.getPrecio()*item1.getCantidad() + item2.getPrecio()*item2.getCantidad() + item3.getPrecio()*item3.getCantidad();
 		return precio;
 	}
-	
+	public void setPrecio(Double precio) {
+		this.precio = precio;
+	}
+	//Getter&Setter Persona
 	public Persona getPersona() {
 		return Persona;
 	}
 	public void setPersona(Persona persona) {
 		Persona = persona;
 	}
-	public Producto getProducto1() {
-		return producto1;
+	//Getter&Setter Item1
+	public ItemCarrito getItem1() {
+		return item1;
 	}
-	public void setProducto1(Producto producto1) {
-		this.producto1 = producto1;
+	public void setItem1(ItemCarrito item1) {
+		this.item1 = item1;
 	}
-	public Producto getProducto2() {
-		return producto2;
+	//Getter&Setter item2
+	public ItemCarrito getItem2() {
+		return item2;
 	}
-	public void setProducto2(Producto producto2) {
-		this.producto2 = producto2;
+	public void setItem2(ItemCarrito item2) {
+		this.item2 = item2;
 	}
-	public Producto getProducto3() {
-		return producto3;
+	//Getter&Setter Item3
+	public ItemCarrito getItem3() {
+		return item3;
 	}
-	public void setProducto3(Producto producto3) {
-		this.producto3 = producto3;
+	public void setItem3(ItemCarrito item3) {
+		this.item3 = item3;
 	}
 
 	

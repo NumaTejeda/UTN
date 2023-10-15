@@ -60,12 +60,19 @@ public class TrabajandoConClases {
 		Producto producto1 = productos.get(0);
 		Producto producto2 = productos.get(1);
 		Producto producto3 = productos.get(2);
-		producto1.setCantidad(3);
-		producto2.setCantidad(7);
-		producto3.setCantidad(1);
-		Carrito carrito = new Carrito(numa, producto1, producto2, producto3);
+		producto1.setStock(3);
+		producto2.setStock(7);
+		producto3.setStock(10);
 		
-		System.out.println(carrito.datosPantalla());
-		//System.out.println(productos);
+		ItemCarrito item1 = new ItemCarrito(producto1.getNombre(), producto1.getPrecio(), 3);
+		ItemCarrito item2 = new ItemCarrito(producto2.getNombre(), producto2.getPrecio(), 4);
+		ItemCarrito item3 = new ItemCarrito(producto3.getNombre(), producto3.getPrecio(), 2);
+		
+		Carrito carrito = new Carrito(numa, item1, item2, item3);
+		
+		System.out.println(carrito.getPrecio());
+		System.out.println(item1.toString());
+		System.out.println(producto1.toStrring());
+		
 	}
 }
