@@ -1,5 +1,6 @@
 package entidades;
 
+import practico5.Descuento;
 
 public class Producto {
 
@@ -32,7 +33,7 @@ public class Producto {
 	}
 
 	//Getter&Setters Precios
-	public Double getPrecio() {
+	public double getPrecio() {
 		return precio;
 	}
 	public void setPrecios(Double precio) {
@@ -44,6 +45,9 @@ public class Producto {
 	}
 	public void setStock(Integer stock) {
 		this.stock = stock;
+	}
+	public Double getPrecioConDescueto(Descuento descuento) {
+		return this.precio - descuento.getValorDescuento();
 	}
 	
 	

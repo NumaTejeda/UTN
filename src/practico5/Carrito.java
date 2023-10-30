@@ -18,17 +18,17 @@ public class Carrito {
 		this.item3 = item3;
 	}
 	//Deberia retornar la suma del costo de los productos de carrito
-	
-	public String getPrecio() {
+	@Override
+	public String toString() {
 		return  "Cantidad // Producto // Precio Unitario \n" +
 				"("+this.item1.getCantidad() +") "+ this.getItem1().getNombre()+" "+ this.getItem1().getPrecio()+"\n"+
 				"("+this.item2.getCantidad() +") "+ this.getItem2().getNombre()+" "+ this.getItem2().getPrecio()+"\n"+
 				"("+this.item3.getCantidad() +") "+ this.getItem3().getNombre()+" "+ this.getItem3().getPrecio()+
-				"\nCosto total: "+this.setPrecio();
+				"\nCosto total: "+this.getPrecio();
 	}
 
 	//Getter&Setter precio
-	public Double setPrecio() {
+	public Double getPrecio() {
 		precio = item1.getPrecio()*item1.getCantidad() + item2.getPrecio()*item2.getCantidad() + item3.getPrecio()*item3.getCantidad();
 		return precio;
 	}

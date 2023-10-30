@@ -15,7 +15,6 @@ public class ItemCarrito extends Producto{
 		super(nombre, precio);
 		this.setCantidad(cantidad);
 	}
-	
 	public String toString() {
 		return "Producto: " + this.getNombre() + ", Cantidad: "+ this.getCantidad() + ", Precio: "+this.getPrecio();
 	}
